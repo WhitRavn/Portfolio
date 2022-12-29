@@ -1,0 +1,52 @@
+@import "./index.scss";
+
+.App {
+  margin: auto 0;
+}
+
+/*MENU*/
+.header {
+  background-color: yellow;
+
+  .section-menu {
+    display: inline-block;
+    margin-left: 720px;
+    background-color: red;
+    width: 1200px;
+
+    .nav-menu {
+      background-color: blue;
+
+      .list-menu {
+        background-color: green;
+        font-size: 25px;
+
+        il {
+          background-color: aqua;
+          margin-left: 150px;
+        }
+      }
+    }
+  }
+}
+
+/*BODY*/
+.body {
+  background-color: violet;
+  height: 888px;
+  margin-top: 0px;
+  .section-affichage {
+    float: left;
+    background-color: forestgreen;
+    height: 800px;
+    width: 50%;
+    margin-top: 50px;
+  }
+  .section-image {
+    float: right;
+    background-color: burlywood;
+    height: 800px;
+    width: 50%;
+    margin-top: 50px;
+  }
+}
