@@ -18,12 +18,13 @@
       background-color: blue;
 
       .list-menu {
+        display: flex;
+        justify-content: space-evenly;
         background-color: green;
         font-size: 25px;
 
-        il {
+        li {
           background-color: aqua;
-          margin-left: 150px;
         }
       }
     }
@@ -41,6 +42,10 @@
     height: 800px;
     width: 50%;
     margin-top: 50px;
+
+    .change-box {
+      background-color: red;
+    }
   }
   .section-image {
     float: right;

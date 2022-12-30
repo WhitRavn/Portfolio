@@ -6,18 +6,18 @@ export class Menu extends React.Component {
       <div className="section-menu">
         <nav className="nav-menu">
           <ul className="list-menu">
-            <il>
+            <li>
               <a>Home</a>
-            </il>
-            <il>
+            </li>
+            <li>
               <a>Skills</a>
-            </il>
-            <il>
+            </li>
+            <li>
               <a>Portfolio</a>
-            </il>
-            <il>
+            </li>
+            <li>
               <a>Contact</a>
-            </il>
+            </li>
           </ul>
         </nav>
       </div>
