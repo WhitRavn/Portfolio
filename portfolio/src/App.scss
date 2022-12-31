@@ -5,27 +5,23 @@
 }
 
 /*MENU*/
-.header {
-  background-color: yellow;
+.section-menu {
+  display: inline-block;
+  margin-left: 720px;
+  background-color: red;
+  width: 1200px;
 
-  .section-menu {
-    display: inline-block;
-    margin-left: 720px;
-    background-color: red;
-    width: 1200px;
+  .nav-menu {
+    background-color: blue;
 
-    .nav-menu {
-      background-color: blue;
+    .list-menu {
+      display: flex;
+      justify-content: space-evenly;
+      background-color: green;
+      font-size: 25px;
 
-      .list-menu {
-        display: flex;
-        justify-content: space-evenly;
-        background-color: green;
-        font-size: 25px;
-
-        li {
-          background-color: aqua;
-        }
+      li {
+        background-color: aqua;
       }
     }
   }

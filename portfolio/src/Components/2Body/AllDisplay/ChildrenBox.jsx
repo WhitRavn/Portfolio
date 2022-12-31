@@ -1,6 +1,26 @@
 import React from "react";
 import { Children, cloneElement, useState } from "react";
 
+export function SectionContent({ children }) {
+  const menuChildren = Children.toArray(children);
+  console.log(menuChildren);
+  return (
+    <div>
+      {menuChildren.map((child, key) => {
+        return (
+          <div className="section-menu">
+            <nav className="nav-menu">
+              <ul className="list-menu">
+                <li key={child.key}>{child.props.title}</li>
+              </ul>
+            </nav>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 export function AllContentBox({ children }) {
   const childrenArray = Children.toArray(children);
   const [current, setCurrent] = useState(childrenArray[0].key);

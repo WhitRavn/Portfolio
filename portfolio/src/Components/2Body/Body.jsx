@@ -1,12 +1,17 @@
 import React from "react";
 import { SectionAffichage } from "./Affichage";
 import { SectionImage } from "./Image";
+import {
+  AllContentBox,
+  ContentBox,
+  SectionContent,
+} from "./AllDisplay/ChildrenBox";
 
 export class Body extends React.Component {
   render() {
     return (
       <div className="body">
-        <SectionAffichage>
+        <SectionContent>
           <ContentBox className="Box1" title="Home">
             1Je suis au delà de toute règle, au sommet de mon art et pourtant si
             risible.
@@ -20,8 +25,7 @@ export class Body extends React.Component {
           <ContentBox className="Box4" title="Contact">
             4Il n'y pas plus de "Je", seulement une personne.
           </ContentBox>
-        </SectionAffichage>
-        <SectionImage />
+        </SectionContent>
       </div>
     );
   }
