@@ -1,7 +1,7 @@
 import React from "react";
-import { Children, cloneElement, useState } from "react";
+import { Children, cloneElement, useState, useEffect } from "react";
 
-export function SectionContent({ children }) {
+export function SectionContent({ visible, children }) {
   const boxChildren = Children.toArray(children);
 
   const [current, setCurrent] = useState(boxChildren[0].key);
@@ -9,21 +9,26 @@ export function SectionContent({ children }) {
     return cloneElement(child, { selected: child.key === current });
   });
 
+  function click(e) {
+    const key = e.target.dataset.key;
+    setCurrent(key);
+    console.log(key);
+  }
+
+  function handleClick({ child }) {
+    console.log(child);
+  }
+
+  console.log(newBoxChildren);
+
   return (
     <div>
       <div className="section-menu">
         <nav className="nav-menu">
-          <ul className="list-menu">
+          <ul className="list-menu" onClick={click}>
             {boxChildren.map((child) => {
               return (
-                <li
-                  onClick={() =>
-                    setTimeout(() => {
-                      setCurrent(child.key);
-                    }, 500)
-                  }
-                  key={child.key}
-                >
+                <li key={child.key} data-key={child.key}>
                   {child.props.title}
                 </li>
               );
@@ -42,10 +47,11 @@ export function SectionContent({ children }) {
 
 export function ContentBox({ children, selected }) {
   let visible = "content-box";
-  if (!selected) {
+  /*if (selected) {
     visible += " off";
-  }
-  console.log(visible);
+  }*/
+
+  console.log(selected, visible);
   return (
     <div hidden={!selected} className={visible}>
       {children}
