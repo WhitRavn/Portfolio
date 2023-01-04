@@ -2,16 +2,16 @@
 
 .App {
   margin: 0;
-  background-color: #333;
+  background-color: rgb(58, 56, 56);
   height: 975px;
 }
 
 /*MENU*/
 .section-menu {
   display: inline-block;
-  background-color: #222;
+
   width: 100%;
-  box-shadow: 0px 10px 80px #fff;
+
   .nav-menu {
     .list-menu {
       display: flex;
@@ -34,13 +34,17 @@
     background: $colorMain;
     height: 871px;
     margin-top: 20px;
-    .change-box {
-      display: inline-block;
-      color: #fff;
-      width: 1900px;
-      height: 750px;
-      margin: 50px 10px;
-    }
+  }
+  .change-box {
+    display: inline-block;
+    color: #fff;
+    width: 1900px;
+    height: 750px;
+    margin: 50px 10px;
+    transition: opacity 0.5s;
+  }
+  .change-box.off {
+    opacity: 0;
   }
   /*.section-image {
     float: right;
@@ -50,11 +54,24 @@
     margin-top: 50px;
   }*/
 }
-
-.content-box {
-  transition: opacity 0.5s;
-}
-
-.content-box.off {
-  opacity: 0;
+/*HOME*/
+.home-text {
+  display: inline-block;
+  /*background-color: red;*/
+  width: 800px;
+  height: 500px;
+  margin: 50px 200px;
+  .h-text-1 {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 25px;
+  }
+  .h-text-2 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 60px;
+    background-color: red;
+  }
+  .h-text-3 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 22px;
+  }
 }
