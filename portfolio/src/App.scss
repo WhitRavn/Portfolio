@@ -1,17 +1,22 @@
 @import "./index.scss";
 
+html {
+  height: 100%;
+  background-image: url("./Components/2Body/Img/fond1.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 .App {
   margin: 0;
-  background-color: rgb(58, 56, 56);
-  height: 975px;
+
+  height: 900px;
 }
 
 /*MENU*/
 .section-menu {
   display: inline-block;
-
   width: 100%;
-
   .nav-menu {
     .list-menu {
       display: flex;
@@ -31,9 +36,8 @@
 /*BODY*/
 .body {
   .section-affichage {
-    background: $colorMain;
+    /*background: $colorMain;*/
     height: 871px;
-    margin-top: 20px;
   }
   .change-box {
     display: inline-block;
@@ -46,13 +50,6 @@
   .change-box.off {
     opacity: 0;
   }
-  /*.section-image {
-    float: right;
-    background-color: burlywood;
-    height: 800px;
-    width: 50%;
-    margin-top: 50px;
-  }*/
 }
 /*HOME*/
 .home-text {
@@ -74,4 +71,72 @@
     font-family: "Roboto Mono", monospace;
     font-size: 22px;
   }
+}
+
+/*SKILL*/
+
+.skill-section {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 600px;
+  height: 520px;
+  margin: 100px 200px;
+  padding: 0 50px;
+  border-radius: 2%;
+  .skill-box {
+    margin: 40px 20px;
+    height: 40px;
+    background-color: rgb(136, 135, 135, 0.4);
+    .skill-title {
+      float: left;
+      font-size: 15px;
+      font-family: "Oswald", sans-serif;
+      width: 16%;
+      height: 100%;
+      padding: 0 5px;
+      background-color: rgb(156, 12, 12);
+      .span-title {
+        position: relative;
+        top: 8px;
+      }
+    }
+    .skill-bar {
+      float: right;
+      width: 82.2%;
+      height: 100%;
+      .skill-per {
+        position: relative;
+        display: block;
+        background-color: red;
+        height: 100%;
+        .tooltip {
+          position: relative;
+          left: 420px;
+          top: 6px;
+          font-size: 11px;
+          color: #fff;
+          border-radius: 3px;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
+.skill-per.htmlcss {
+  width: 85%;
+}
+.skill-per.js {
+  width: 60%;
+}
+.skill-per.react {
+  width: 70%;
+}
+.skill-per.node {
+  width: 50%;
+}
+.skill-per.php {
+  width: 20%;
+}
+.skill-per.mysql {
+  width: 10%;
 }
