@@ -140,3 +140,45 @@ html {
 .skill-per.mysql {
   width: 10%;
 }
+
+/*PORTFOLIO*/
+.port-section {
+  display: flex;
+  margin-left: calc(100% - 1800px);
+  height: 800px;
+  .port-container-img {
+    display: flex;
+    flex-wrap: no-wrap;
+    width: 1400px;
+    height: 700px;
+    margin: 20px 0;
+    .port-box {
+      margin-left: 100px;
+      .port-img {
+        width: 400px;
+        height: 250px;
+        border-radius: 20px;
+      }
+      .port-text {
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.port-box.two {
+  margin-top: 400px;
+}
+
+/*CONTACT*/
+.contact-section {
+  text-align: center;
+  margin-top: 100px;
+  .contact-container {
+    #mail-icon {
+      color: red;
+    }
+  }
+}
