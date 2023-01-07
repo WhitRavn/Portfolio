@@ -11,7 +11,14 @@ export class Contact extends React.Component {
           </span>
           <p>Mon adresse email</p>
         </div>
-        <div className="home-img"></div>
+        <form className="form" action="" method="post">
+          <label for="object">Objet </label>
+          <input type="name" id="object" />
+          <label for="object">Name </label>
+          <input type="name" id="name" />
+          <label for="object">Mail </label>
+          <input type="name" id="mail" />
+        </form>
       </div>
     );
   }

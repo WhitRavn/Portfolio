@@ -3,18 +3,24 @@ import React from "react";
 const imgArray = [
   {
     img: require("../Img/screen1.png"),
-    text: "NovalieTravel",
+    title: "NovalieTravel",
     class: "port-box one",
+    text: "sfhhhhhhh hhhhh  hhhhhhhhh hhhhhh hhh",
+    classText: "port-text",
   },
   {
     img: require("../Img/screen2.png"),
-    text: "Meute2",
+    title: "Meute2",
     class: "port-box two",
+    text: "sfhhhhhhh hhhhhhhhhhh hhhhhhhhh hhhhh",
+    classText: "port-text two",
   },
   {
     img: require("../Img/screen0.png"),
-    text: "Meander",
+    title: "Meander",
     class: "port-box three",
+    text: "sfhh hhhhhhhhhh hhhhhhhh hhhhhhh hhhh",
+    classText: "port-text",
   },
 ];
 
@@ -24,7 +30,10 @@ export class Portfolio extends React.Component {
       <div>
         <div className={item.class} key={index}>
           <img className="port-img" src={item.img} />
-          <p className="port-text">{item.text}</p>
+          <p className="port-title">{item.title}</p>
+          <div className={item.classText}>
+            <p className="port-content-text">{item.text}</p>
+          </div>
         </div>
       </div>
     );

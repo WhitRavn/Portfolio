@@ -159,10 +159,18 @@ html {
         height: 250px;
         border-radius: 20px;
       }
-      .port-text {
+      .port-title {
         text-align: center;
         font-family: "Oswald", sans-serif;
         font-size: 30px;
+      }
+      .port-text {
+        width: 400px;
+        height: 300px;
+      }
+      .port-content-text {
+        display: inline-block;
+        width: 50%;
       }
     }
   }
@@ -170,6 +178,10 @@ html {
 
 .port-box.two {
   margin-top: 400px;
+}
+.port-text.two {
+  position: absolute;
+  top: 200px;
 }
 
 /*CONTACT*/
@@ -180,5 +192,9 @@ html {
     #mail-icon {
       color: red;
     }
+  }
+  .form {
+    display: inline-block;
+    width: 200px;
   }
 }
